@@ -1,0 +1,199 @@
+{
+	"sheets": [
+		{
+			"name": "test",
+			"columns": [
+				{
+					"typeStr": "14",
+					"name": "icon",
+					"kind": null
+				},
+				{
+					"typeStr": "0",
+					"name": "id",
+					"kind": null,
+					"scope": null
+				},
+				{
+					"typeStr": "1",
+					"name": "name",
+					"kind": "localizable"
+				},
+				{
+					"typeStr": "8",
+					"name": "tags",
+					"kind": null
+				},
+				{
+					"typeStr": "3",
+					"name": "price",
+					"kind": null,
+					"defaultValue": 10
+				}
+			],
+			"lines": [
+				{
+					"id": "Life",
+					"name": "Soin",
+					"price": 10,
+					"icon": {
+						"file": "../finalbossblues-icons_full_16.png",
+						"size": 16,
+						"x": 1,
+						"y": 0
+					},
+					"tags": [
+						{
+							"tag": "Precious"
+						}
+					]
+				},
+				{
+					"id": "Sword3",
+					"name": "Mon épée",
+					"tags": [
+						{
+							"tag": "Armor"
+						},
+						{
+							"tag": "Precious"
+						}
+					],
+					"price": 10,
+					"icon": {
+						"file": "../finalbossblues-icons_full_16.png",
+						"size": 16,
+						"x": 10,
+						"y": 27
+					}
+				},
+				{
+					"id": "Sword2",
+					"name": "Mon épée super rare",
+					"price": 10,
+					"icon": {
+						"file": "../finalbossblues-icons_full_16.png",
+						"size": 16,
+						"x": 13,
+						"y": 27
+					},
+					"tags": []
+				},
+				{
+					"id": "Shield",
+					"name": "Bling",
+					"price": 20,
+					"icon": {
+						"file": "../finalbossblues-icons_full_16.png",
+						"size": 16,
+						"x": 1,
+						"y": 36
+					},
+					"tags": [
+						{
+							"tag": "Armor"
+						}
+					]
+				},
+				{
+					"id": "Bomb",
+					"name": "BOOM",
+					"price": 10,
+					"icon": {
+						"file": "../finalbossblues-icons_full_16.png",
+						"size": 16,
+						"x": 10,
+						"y": 34
+					},
+					"tags": []
+				},
+				{
+					"id": "Unknown",
+					"name": "Truc",
+					"tags": [],
+					"price": 10,
+					"icon": {
+						"file": "../finalbossblues-icons_full_16.png",
+						"size": 16,
+						"x": 12,
+						"y": 1
+					}
+				}
+			],
+			"separators": [
+				{
+					"level": 1,
+					"id": "Shield"
+				}
+			],
+			"props": {}
+		},
+		{
+			"name": "test@tags",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "6:itemTag",
+					"name": "tag",
+					"opt": true,
+					"kind": null
+				}
+			]
+		},
+		{
+			"name": "itemTag",
+			"columns": [
+				{
+					"typeStr": "14",
+					"name": "icon",
+					"kind": null
+				},
+				{
+					"typeStr": "0",
+					"name": "id",
+					"kind": null,
+					"scope": null
+				}
+			],
+			"lines": [
+				{
+					"id": "Precious",
+					"icon": {
+						"file": "../../../tenjutsu/res/atlas/icons.png",
+						"size": 16,
+						"x": 39,
+						"y": 4
+					}
+				},
+				{
+					"id": "Weapon",
+					"icon": {
+						"file": "../../../tenjutsu/res/atlas/icons.png",
+						"size": 16,
+						"x": 6,
+						"y": 11
+					}
+				},
+				{
+					"id": "Armor",
+					"icon": {
+						"file": "../../../tenjutsu/res/atlas/icons.png",
+						"size": 16,
+						"x": 0,
+						"y": 20
+					}
+				}
+			],
+			"separators": [],
+			"props": {
+				"displayIcon": "icon"
+			}
+		}
+	],
+	"customTypes": [],
+	"compress": false
+}

@@ -1,0 +1,40 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Pouet",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 976863226768021
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 389717756130997
+				}
+			],
+			"actions": [],
+			"sid": 630837948035147
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 386053909803616
+				}
+			],
+			"actions": [],
+			"sid": 804826815375452
+		}
+	],
+	"sid": 401876023881279
+}

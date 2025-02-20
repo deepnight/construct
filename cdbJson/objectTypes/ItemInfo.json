@@ -1,0 +1,44 @@
+{
+	"name": "ItemInfo",
+	"plugin-id": "Dictionary",
+	"sid": 510664865548355,
+	"isGlobal": true,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "id",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 744141025018179
+		},
+		{
+			"name": "name",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 249507551336760
+		},
+		{
+			"name": "price",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 910440120634205
+		},
+		{
+			"name": "itemTags",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 650133400712442
+		},
+		{
+			"name": "iconUid",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 519700787375190
+		}
+	]
+}
