@@ -2,28 +2,6 @@
 	"name": "Event sheet 1",
 	"events": [
 		{
-			"eventType": "variable",
-			"name": "Pouet",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 976863226768021
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 389717756130997
-				}
-			],
-			"actions": [],
-			"sid": 630837948035147
-		},
-		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -34,6 +12,58 @@
 			],
 			"actions": [],
 			"sid": 804826815375452
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-signal",
+					"objectClass": "System",
+					"sid": 539073349551015,
+					"parameters": {
+						"tag": "\"pouet\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 845913536207248,
+					"parameters": {
+						"object-to-create": "ItemIcon",
+						"layer": "0",
+						"x": "10",
+						"y": "50",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 267300153550830
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "ItemIcon",
+					"sid": 516549882932154,
+					"parameters": {
+						"animation": "\"Bomb\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "ItemIcon",
+					"sid": 788673265492882,
+					"parameters": {
+						"width": "16",
+						"height": "16"
+					}
+				}
+			],
+			"sid": 388409710424826
 		}
 	],
 	"sid": 401876023881279
