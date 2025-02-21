@@ -2,74 +2,124 @@
 	"name": "GameEvents",
 	"events": [
 		{
+			"functionName": "initIcon",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "itemId",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 349639060245255
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 107159728871239,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 685480976056355
+						},
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 563320521771530,
+							"parameters": {
+								"object": "ItemInfo",
+								"expression": "ItemInfo.id",
+								"comparison": 0,
+								"value": "itemId"
+							}
+						},
+						{
+							"id": "pick-last-created",
+							"objectClass": "System",
+							"sid": 203363398849542,
+							"parameters": {
+								"object": "ItemIcon"
+							}
+						}
+					],
+					"actions": [
+						{
+							"type": "script",
+							"script": "if( runtime.objects.ItemIcon.getAnimation(localVars.itemId)==null )\n\truntime.objects.ItemIcon.addAnimation(localVars.itemId);\n"
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "ItemIcon",
+							"sid": 428739177178373,
+							"parameters": {
+								"animation": "ItemInfo.id",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "load-image-from-url",
+							"objectClass": "ItemIcon",
+							"sid": 603020736628567,
+							"parameters": {
+								"uri": "ItemInfo.iconPngString",
+								"size": "resize-to-image-size",
+								"cross-origin": "anonymous"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "ItemIcon",
+							"sid": 908782843057658,
+							"parameters": {
+								"instance-variable": "itemId",
+								"value": "ItemInfo.id"
+							}
+						}
+					],
+					"sid": 149815071781585
+				}
+			]
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
 					"id": "trigger-once-while-true",
 					"objectClass": "System",
-					"sid": 146533372757479
-				},
-				{
-					"id": "pick-by-comparison",
-					"objectClass": "System",
-					"sid": 997427096448453,
-					"parameters": {
-						"object": "ItemInfo",
-						"expression": "ItemInfo.id",
-						"comparison": 0,
-						"value": "\"Life\""
-					}
+					"sid": 580365858754798
 				}
 			],
 			"actions": [
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 829253969318875,
+					"sid": 532071319695444,
 					"parameters": {
 						"object-to-create": "ItemIcon",
 						"layer": "0",
 						"x": "30",
-						"y": "30",
+						"y": "0",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
 				},
 				{
-					"id": "wait-for-previous-actions",
-					"objectClass": "System",
-					"sid": 900662060626555
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "ItemIcon",
-					"sid": 171107172693969,
-					"parameters": {
-						"animation": "ItemInfo.id",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "load-image-from-url",
-					"objectClass": "ItemIcon",
-					"sid": 770718050593177,
-					"parameters": {
-						"uri": "ItemInfo.iconPngString",
-						"size": "resize-to-image-size",
-						"cross-origin": "anonymous"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "ItemIcon",
-					"sid": 414190487520690,
-					"parameters": {
-						"instance-variable": "itemId",
-						"value": "ItemInfo.id"
-					}
+					"callFunction": "initIcon",
+					"sid": 674756024860783,
+					"parameters": [
+						"\"Life\""
+					]
 				}
 			],
-			"sid": 873312183192670
+			"sid": 844911883084585
 		},
 		{
 			"eventType": "block",
@@ -77,151 +127,32 @@
 				{
 					"id": "trigger-once-while-true",
 					"objectClass": "System",
-					"sid": 360974767098481
-				},
-				{
-					"id": "pick-by-comparison",
-					"objectClass": "System",
-					"sid": 897119932224528,
-					"parameters": {
-						"object": "ItemInfo",
-						"expression": "ItemInfo.id",
-						"comparison": 0,
-						"value": "\"Bomb\""
-					}
+					"sid": 515726372674652
 				}
 			],
 			"actions": [
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 715791971878609,
+					"sid": 916976426118898,
 					"parameters": {
 						"object-to-create": "ItemIcon",
 						"layer": "0",
 						"x": "60",
-						"y": "30",
+						"y": "0",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
 				},
 				{
-					"id": "wait-for-previous-actions",
-					"objectClass": "System",
-					"sid": 801403758719415
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "ItemIcon",
-					"sid": 665099152912785,
-					"parameters": {
-						"animation": "ItemInfo.id",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "load-image-from-url",
-					"objectClass": "ItemIcon",
-					"sid": 767468967699564,
-					"parameters": {
-						"uri": "ItemInfo.iconPngString",
-						"size": "resize-to-image-size",
-						"cross-origin": "anonymous"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "ItemIcon",
-					"sid": 987039760864558,
-					"parameters": {
-						"instance-variable": "itemId",
-						"value": "ItemInfo.id"
-					}
+					"callFunction": "initIcon",
+					"sid": 831598563742758,
+					"parameters": [
+						"\"Bomb\""
+					]
 				}
 			],
-			"sid": 941253644390138
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 615897248540780
-				},
-				{
-					"id": "pick-by-comparison",
-					"objectClass": "System",
-					"sid": 162497084903000,
-					"parameters": {
-						"object": "ItemInfo",
-						"expression": "ItemInfo.id",
-						"comparison": 0,
-						"value": "\"Life\""
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 656242693719595,
-					"parameters": {
-						"object-to-create": "ItemIcon",
-						"layer": "0",
-						"x": "90",
-						"y": "30",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				},
-				{
-					"id": "wait-for-previous-actions",
-					"objectClass": "System",
-					"sid": 980076328899038
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "ItemIcon",
-					"sid": 150048782905915,
-					"parameters": {
-						"animation": "ItemInfo.id",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "load-image-from-url",
-					"objectClass": "ItemIcon",
-					"sid": 951437805162201,
-					"parameters": {
-						"uri": "ItemInfo.iconPngString",
-						"size": "resize-to-image-size",
-						"cross-origin": "anonymous"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "ItemIcon",
-					"sid": 913123608246553,
-					"parameters": {
-						"instance-variable": "itemId",
-						"value": "ItemInfo.id"
-					}
-				}
-			],
-			"sid": 988254579902875
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 550263506383791
-				}
-			],
-			"actions": [],
-			"sid": 598001507584688
+			"sid": 865463468069481
 		}
 	],
 	"sid": 836567444103653

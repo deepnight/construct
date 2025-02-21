@@ -68,9 +68,9 @@ async function loadCdbJson(runtime, cdbPath, iconAtlasPath) {
 			var infoInstance = infoObjectRef.createInstance(0, 0,0);
 
 			// Create animations
-			iconObjectRefs.forEach(iconObjectRef => {
-				iconObjectRef.addAnimation(rowJson.ID);
-			});
+			// iconObjectRefs.forEach(iconObjectRef => {
+			// 	iconObjectRef.addAnimation(rowJson.ID);
+			// });
 
 			// Extract icon PNG data
 			var tile = rowJson.Icon;
