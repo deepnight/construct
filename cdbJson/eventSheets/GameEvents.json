@@ -1,0 +1,216 @@
+{
+	"name": "GameEvents",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 146533372757479
+				},
+				{
+					"id": "pick-by-comparison",
+					"objectClass": "System",
+					"sid": 997427096448453,
+					"parameters": {
+						"object": "ItemInfo",
+						"expression": "ItemInfo.id",
+						"comparison": 0,
+						"value": "\"Life\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 829253969318875,
+					"parameters": {
+						"object-to-create": "ItemIcon",
+						"layer": "0",
+						"x": "30",
+						"y": "30",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 900662060626555
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "ItemIcon",
+					"sid": 171107172693969,
+					"parameters": {
+						"animation": "ItemInfo.id",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "load-image-from-url",
+					"objectClass": "ItemIcon",
+					"sid": 770718050593177,
+					"parameters": {
+						"uri": "ItemInfo.iconPngString",
+						"size": "resize-to-image-size",
+						"cross-origin": "anonymous"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "ItemIcon",
+					"sid": 414190487520690,
+					"parameters": {
+						"instance-variable": "itemId",
+						"value": "ItemInfo.id"
+					}
+				}
+			],
+			"sid": 873312183192670
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 360974767098481
+				},
+				{
+					"id": "pick-by-comparison",
+					"objectClass": "System",
+					"sid": 897119932224528,
+					"parameters": {
+						"object": "ItemInfo",
+						"expression": "ItemInfo.id",
+						"comparison": 0,
+						"value": "\"Bomb\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 715791971878609,
+					"parameters": {
+						"object-to-create": "ItemIcon",
+						"layer": "0",
+						"x": "60",
+						"y": "30",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 801403758719415
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "ItemIcon",
+					"sid": 665099152912785,
+					"parameters": {
+						"animation": "ItemInfo.id",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "load-image-from-url",
+					"objectClass": "ItemIcon",
+					"sid": 767468967699564,
+					"parameters": {
+						"uri": "ItemInfo.iconPngString",
+						"size": "resize-to-image-size",
+						"cross-origin": "anonymous"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "ItemIcon",
+					"sid": 987039760864558,
+					"parameters": {
+						"instance-variable": "itemId",
+						"value": "ItemInfo.id"
+					}
+				}
+			],
+			"sid": 941253644390138
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 615897248540780
+				},
+				{
+					"id": "pick-by-comparison",
+					"objectClass": "System",
+					"sid": 162497084903000,
+					"parameters": {
+						"object": "ItemInfo",
+						"expression": "ItemInfo.id",
+						"comparison": 0,
+						"value": "\"Life\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 656242693719595,
+					"parameters": {
+						"object-to-create": "ItemIcon",
+						"layer": "0",
+						"x": "90",
+						"y": "30",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 980076328899038
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "ItemIcon",
+					"sid": 150048782905915,
+					"parameters": {
+						"animation": "ItemInfo.id",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "load-image-from-url",
+					"objectClass": "ItemIcon",
+					"sid": 951437805162201,
+					"parameters": {
+						"uri": "ItemInfo.iconPngString",
+						"size": "resize-to-image-size",
+						"cross-origin": "anonymous"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "ItemIcon",
+					"sid": 913123608246553,
+					"parameters": {
+						"instance-variable": "itemId",
+						"value": "ItemInfo.id"
+					}
+				}
+			],
+			"sid": 988254579902875
+		}
+	],
+	"sid": 836567444103653
+}

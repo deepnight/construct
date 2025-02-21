@@ -1,0 +1,42 @@
+{
+	"name": "LoaderEvents",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 386053909803616
+				}
+			],
+			"actions": [],
+			"sid": 804826815375452
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-signal",
+					"objectClass": "System",
+					"sid": 117699145669254,
+					"parameters": {
+						"tag": "\"pouet\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 509017820088594,
+					"parameters": {
+						"layout": "Game"
+					}
+				}
+			],
+			"sid": 759929143374356
+		}
+	],
+	"sid": 401876023881279
+}

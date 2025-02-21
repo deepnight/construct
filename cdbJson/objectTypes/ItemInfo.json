@@ -34,11 +34,11 @@
 			"sid": 650133400712442
 		},
 		{
-			"name": "iconUid",
-			"type": "number",
+			"name": "iconPngString",
+			"type": "string",
 			"desc": "",
 			"show": true,
-			"sid": 519700787375190
+			"sid": 621878862574349
 		}
 	]
 }

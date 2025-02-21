@@ -37,13 +37,15 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"Loader",
+			"Game"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"LoaderEvents",
+			"GameEvents"
 		],
 		"subfolders": []
 	},
@@ -241,5 +243,5 @@
 	},
 	"viewportWidth": 320,
 	"viewportHeight": 240,
-	"firstLayout": null
+	"firstLayout": "Loader"
 }

@@ -1,5 +1,5 @@
 {
-	"name": "Layout 1",
+	"name": "Loader",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -18,9 +18,9 @@
 				1
 			],
 			"backgroundColor": [
-				0.3686274509803922,
-				0.3686274509803922,
-				0.3686274509803922,
+				0.49019607843137253,
+				0.21176470588235294,
+				0.09019607843137255,
 				1
 			],
 			"isTransparent": false,
@@ -53,7 +53,7 @@
 				"name": "",
 				"price": 0,
 				"itemTags": "",
-				"iconUid": 0
+				"iconPngString": ""
 			}
 		}
 	],
@@ -64,5 +64,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "Event sheet 1"
+	"eventSheet": "LoaderEvents"
 }
