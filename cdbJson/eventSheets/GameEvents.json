@@ -120,39 +120,6 @@
 				}
 			],
 			"sid": 844911883084585
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 515726372674652
-				}
-			],
-			"actions": [
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 916976426118898,
-					"parameters": {
-						"object-to-create": "ItemIcon",
-						"layer": "0",
-						"x": "60",
-						"y": "0",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				},
-				{
-					"callFunction": "initIcon",
-					"sid": 831598563742758,
-					"parameters": [
-						"\"Bomb\""
-					]
-				}
-			],
-			"sid": 865463468069481
 		}
 	],
 	"sid": 836567444103653

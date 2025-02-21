@@ -11,8 +11,8 @@ function initLibraryReferences(runtime) {
 
 	// These are the names of all the ICON OBJECTS in the project library.
 	// Add one "push" line for each ICON OBJECT in the project.
-	iconObjectRefs.push( runtime.objects.ItemIcon );
-	iconObjectRefs.push( runtime.objects.ItemIcon2 );
+	// iconObjectRefs.push( runtime.objects.ItemIcon );
+	// iconObjectRefs.push( runtime.objects.ItemIcon2 );
 }
 
 function copyValuesFromCdb(itemDictionaryInstance, itemJson, pngString) {
@@ -33,7 +33,7 @@ function copyValuesFromCdb(itemDictionaryInstance, itemJson, pngString) {
 ****************************************************************************************/
 
 var infoObjectRef;
-var iconObjectRefs = [];
+// var iconObjectRefs = [];
 var remainingOps;
 
 // Boot script
