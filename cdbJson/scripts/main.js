@@ -2,6 +2,9 @@
  PLEASE EDIT THE FOLLOWING
 ****************************************************************************************/
 
+var itemSheetName = "finalbossblues-icons_full_16.png";
+var cdbName = "res/data.cdb";
+
 function initLibraryReferences(runtime) {
 	// This is the name of the ITEM DICTIONARY in the project library
 	infoObjectRef = runtime.objects.ItemInfo;
@@ -40,7 +43,7 @@ runOnStartup(async runtime =>{
 
 async function OnBeforeProjectStart(runtime) {
 	initLibraryReferences(runtime);
-	loadCdbJson(runtime, "res/data.cdb", "finalbossblues-icons_full_16.png");
+	loadCdbJson(runtime, cdbName, itemSheetName);
 }
 
 
