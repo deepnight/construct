@@ -25,7 +25,8 @@
 	"objectTypes": {
 		"items": [
 			"ItemInfo",
-			"ItemIcon"
+			"ItemIcon",
+			"ItemIcon2"
 		],
 		"subfolders": []
 	},

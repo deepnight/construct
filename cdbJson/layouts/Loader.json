@@ -49,11 +49,9 @@
 			"sid": 858568745399079,
 			"tags": "",
 			"instanceVariables": {
-				"id": "",
-				"name": "",
-				"price": 0,
-				"itemTags": "",
-				"iconPngString": ""
+				"ID": "",
+				"Name": "",
+				"IconPngString": ""
 			}
 		}
 	],

@@ -9,13 +9,14 @@ function initLibraryReferences(runtime) {
 	// These are the names of all the ICON OBJECTS in the project library.
 	// Add one "push" line for each ICON OBJECT in the project.
 	iconObjectRefs.push( runtime.objects.ItemIcon );
+	iconObjectRefs.push( runtime.objects.ItemIcon2 );
 }
 
 function copyValuesFromCdb(itemDictionaryInstance, itemJson, pngString) {
 	// Fill ICON DICTIONARY instance fields
-	itemDictionaryInstance.instVars.id = itemJson.id;
-	itemDictionaryInstance.instVars.name = itemJson.name;
-	itemDictionaryInstance.instVars.iconPngString = pngString;
+	itemDictionaryInstance.instVars.ID = itemJson.ID;
+	itemDictionaryInstance.instVars.Name = itemJson.Name;
+	itemDictionaryInstance.instVars.IconPngString = pngString;
 }
 
 
@@ -30,6 +31,7 @@ function copyValuesFromCdb(itemDictionaryInstance, itemJson, pngString) {
 
 var infoObjectRef;
 var iconObjectRefs = [];
+var remainingOps;
 
 // Boot script
 runOnStartup(async runtime =>{
@@ -57,24 +59,36 @@ async function loadCdbJson(runtime, cdbPath, iconAtlasPath) {
 		var cdbJson = await runtime.assets.fetchJson(url);
 
 		// Iterate JSON items
+		remainingOps = cdbJson.sheets[0].lines.length;
 		cdbJson.sheets[0].lines.forEach(rowJson => {
 			// Create info instance
 			var infoInstance = infoObjectRef.createInstance(0, 0,0);
 
 			// Create animations
 			iconObjectRefs.forEach(iconObjectRef => {
-				iconObjectRef.addAnimation(rowJson.id);
+				iconObjectRef.addAnimation(rowJson.ID);
 			});
 
 			// Extract icon PNG data
-			var tile = rowJson.icon;
+			var tile = rowJson.Icon;
 			var pngBase64 = extractImageToPngBase64(atlasImg, tile.x*tile.size, tile.y*tile.size, tile.size, tile.size);
 
 			// Fill instance fields
 			copyValuesFromCdb(infoInstance, rowJson, pngBase64);
+			remainingOps--;
+			console.log(remainingOps);
 		});
 
-		runtime.signal("pouet");
+		// Create a JS timer that loops until all operations are done
+		function _check() {
+			if( remainingOps<=0 ) {
+				console.log("ALL DONE");
+				runtime.globalVars.cdbJsonDone = true;
+				clearInterval(myIntervalId);
+			}
+		}
+		var myIntervalId = setInterval(_check, 100);
+
 	}
 	catch( err ) {
 		// Error handling

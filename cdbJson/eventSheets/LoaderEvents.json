@@ -2,26 +2,24 @@
 	"name": "LoaderEvents",
 	"events": [
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 386053909803616
-				}
-			],
-			"actions": [],
-			"sid": 804826815375452
+			"eventType": "variable",
+			"name": "cdbJsonDone",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 824168851045010
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-signal",
+					"id": "compare-boolean-eventvar",
 					"objectClass": "System",
-					"sid": 117699145669254,
+					"sid": 144108600926129,
 					"parameters": {
-						"tag": "\"pouet\""
+						"variable": "cdbJsonDone"
 					}
 				}
 			],
@@ -29,13 +27,13 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 509017820088594,
+					"sid": 657088550931704,
 					"parameters": {
 						"layout": "Game"
 					}
 				}
 			],
-			"sid": 759929143374356
+			"sid": 116005915683929
 		}
 	],
 	"sid": 401876023881279

@@ -6,35 +6,21 @@
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
 		{
-			"name": "id",
+			"name": "ID",
 			"type": "string",
 			"desc": "",
 			"show": true,
 			"sid": 744141025018179
 		},
 		{
-			"name": "name",
+			"name": "Name",
 			"type": "string",
 			"desc": "",
 			"show": true,
 			"sid": 249507551336760
 		},
 		{
-			"name": "price",
-			"type": "number",
-			"desc": "",
-			"show": true,
-			"sid": 910440120634205
-		},
-		{
-			"name": "itemTags",
-			"type": "string",
-			"desc": "",
-			"show": true,
-			"sid": 650133400712442
-		},
-		{
-			"name": "iconPngString",
+			"name": "IconPngString",
 			"type": "string",
 			"desc": "",
 			"show": true,

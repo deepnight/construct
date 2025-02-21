@@ -210,6 +210,18 @@
 				}
 			],
 			"sid": 988254579902875
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 550263506383791
+				}
+			],
+			"actions": [],
+			"sid": 598001507584688
 		}
 	],
 	"sid": 836567444103653

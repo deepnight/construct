@@ -5,53 +5,54 @@
 			"columns": [
 				{
 					"typeStr": "14",
-					"name": "icon",
-					"kind": null
+					"name": "Icon"
 				},
 				{
 					"typeStr": "0",
-					"name": "id",
-					"kind": null,
-					"scope": null
+					"name": "ID"
 				},
 				{
 					"typeStr": "1",
-					"name": "name",
+					"name": "Name",
 					"kind": "localizable"
 				},
 				{
 					"typeStr": "8",
-					"name": "tags",
-					"kind": null
+					"name": "Tags"
 				},
 				{
 					"typeStr": "3",
-					"name": "price",
-					"kind": null,
+					"name": "Price",
 					"defaultValue": 10
 				}
 			],
 			"lines": [
 				{
-					"id": "Life",
-					"name": "Soin",
-					"price": 10,
-					"icon": {
+					"ID": "Life",
+					"Name": "Soin",
+					"Icon": {
 						"file": "../finalbossblues-icons_full_16.png",
 						"size": 16,
 						"x": 1,
 						"y": 0
 					},
-					"tags": [
+					"Tags": [
 						{
 							"tag": "Precious"
 						}
-					]
+					],
+					"Price": 10
 				},
 				{
-					"id": "Sword3",
-					"name": "Mon épée",
-					"tags": [
+					"ID": "Sword3",
+					"Name": "Mon épée",
+					"Icon": {
+						"file": "../finalbossblues-icons_full_16.png",
+						"size": 16,
+						"x": 10,
+						"y": 27
+					},
+					"Tags": [
 						{
 							"tag": "Armor"
 						},
@@ -59,65 +60,59 @@
 							"tag": "Precious"
 						}
 					],
-					"price": 10,
-					"icon": {
-						"file": "../finalbossblues-icons_full_16.png",
-						"size": 16,
-						"x": 10,
-						"y": 27
-					}
+					"Price": 10
 				},
 				{
-					"id": "Sword2",
-					"name": "Mon épée super rare",
-					"price": 10,
-					"icon": {
+					"ID": "Sword2",
+					"Name": "Mon épée super rare",
+					"Icon": {
 						"file": "../finalbossblues-icons_full_16.png",
 						"size": 16,
 						"x": 13,
 						"y": 27
 					},
-					"tags": []
+					"Tags": [],
+					"Price": 10
 				},
 				{
-					"id": "Shield",
-					"name": "Bling",
-					"price": 20,
-					"icon": {
+					"ID": "Shield",
+					"Name": "Bling",
+					"Icon": {
 						"file": "../finalbossblues-icons_full_16.png",
 						"size": 16,
 						"x": 1,
 						"y": 36
 					},
-					"tags": [
+					"Tags": [
 						{
 							"tag": "Armor"
 						}
-					]
+					],
+					"Price": 20
 				},
 				{
-					"id": "Bomb",
-					"name": "BOOM",
-					"price": 10,
-					"icon": {
+					"ID": "Bomb",
+					"Name": "BOOM",
+					"Icon": {
 						"file": "../finalbossblues-icons_full_16.png",
 						"size": 16,
 						"x": 10,
 						"y": 34
 					},
-					"tags": []
+					"Tags": [],
+					"Price": 10
 				},
 				{
-					"id": "Unknown",
-					"name": "Truc",
-					"tags": [],
-					"price": 10,
-					"icon": {
+					"ID": "Unknown",
+					"Name": "Truc",
+					"Icon": {
 						"file": "../finalbossblues-icons_full_16.png",
 						"size": 16,
 						"x": 12,
 						"y": 1
-					}
+					},
+					"Tags": [],
+					"Price": 10
 				}
 			],
 			"separators": [
@@ -129,7 +124,7 @@
 			"props": {}
 		},
 		{
-			"name": "test@tags",
+			"name": "test@Tags",
 			"props": {
 				"hide": true
 			},
